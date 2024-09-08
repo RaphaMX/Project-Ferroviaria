@@ -1,8 +1,8 @@
-let map = L.map('map').setView([-23.35018, -47.83471], 10);
-
-let openStreetMapLayer = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    maxZoom: 19,
-    attribution: '&copy;'
+const key = 'sVlhDI8WWG3HH0VkOgJw';
+const map = L.map('map').setView([-23.35018, -47.83471], 10);
+const mtLayer = L.maptilerLayer({
+    apiKey: key,
+    style: "cab73bfd-eab3-4432-8a9d-19325ba13059",
 }).addTo(map);
 
 let railwayLayer = L.tileLayer('https://{s}.tiles.openrailwaymap.org/standard/{z}/{x}/{y}.png', {
@@ -17,19 +17,3 @@ let stTatui = L.marker([-23.35018, -47.83471]).addTo(map).bindPopup("Estação F
 let stItape = L.marker([-23.583563, -48.047711]).addTo(map).bindPopup("Estação Ferroviária de Itapetininga");
 let stSoro = L.marker([-23.49621, -47.45456]).addTo(map).bindPopup("Estação Ferroviária de Sorocaba");
 let stItar = L.marker([-24.11869, -49.33831]).addTo(map).bindPopup("Estação Ferroviária de Itararé");
-
-let line = L.polyline([
-    [-23.5505, -46.6333],
-    [-23.5605, -46.6433]
-  ], {color: 'blue'}).addTo(map);
-
-  var popup = L.popup();
-
-function onMapClick(e) {
-    popup
-        .setLatLng(e.latlng)
-        .setContent("You clicked the map at " + e.latlng.toString())
-        .openOn(map);
-}
-
-map.on('click', onMapClick);
