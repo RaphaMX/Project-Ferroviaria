@@ -1,3 +1,15 @@
-#map {
-    height: 500px;
-}
+#map { 
+    height: 640px; 
+  }
+  
+  .popup-image {
+    width: 250px;
+    height: auto;
+    border-radius: 5px;
+    display: block;
+    margin: 10px auto; 
+  }
+
+  a {
+    display: none;
+  }
