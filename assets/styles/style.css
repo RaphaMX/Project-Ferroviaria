@@ -17,11 +17,18 @@ p {
   font-size: 1rem;
 }
 
+body {
+    background-color: lightslategrey;
+    display: flex;
+    justify-content: center;
+}
+
 #map {
-  height: 640px;
-  border: 2px solid black;
-  border-radius: 10px;
-  margin: 8px;
+    height: 640px;
+    width: 50%;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 8px;
 }
 
 .popup-image {
