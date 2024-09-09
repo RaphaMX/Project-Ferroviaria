@@ -23,6 +23,17 @@ body {
     justify-content: center;
 }
 
+@media screen (min-width:320px){
+#map {
+    height: 640px;
+    width: 75%;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 8px;
+}
+
+}
+
 #map {
     height: 640px;
     width: 50%;
