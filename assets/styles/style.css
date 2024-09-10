@@ -21,25 +21,22 @@ body {
     background-color: lightslategrey;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
-@media screen (min-width:320px){
 #map {
     height: 640px;
-    width: 75%;
+    width: 100%;
     border: 2px solid black;
     border-radius: 10px;
     margin: 8px;
 }
 
-}
-
-#map {
-    height: 640px;
-    width: 50%;
-    border: 2px solid black;
-    border-radius: 10px;
-    margin: 8px;
+#history {
+  border-radius: 10px;
+  margin: 8px;
+  padding: 15px;
+  font-style: italic;
 }
 
 .popup-image {
